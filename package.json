@@ -1,0 +1,33 @@
+{
+  "name": "shuvi-example",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Zheng Yu Tay",
+  "license": "MIT",
+  "scripts": {
+    "dev": "shuvi dev",
+    "build": "shuvi build"
+  },
+  "devDependencies": {
+    "@types/react": "^16.9.34",
+    "typescript": "^3.8.3",
+    "webpack-bundle-analyzer": "^3.8.0"
+  },
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-router-dom": "^5.2.0",
+    "shuvi": "../shuvi/packages/shuvi",
+    "tapable": "1.1.3"
+  },
+  "resolutions": {
+    "shuvi": "../shuvi/packages/shuvi",
+    "@shuvi/core": "../shuvi/packages/core",
+    "@shuvi/runtime-core": "../shuvi/packages/runtime-core",
+    "@shuvi/runtime-react": "../shuvi/packages/runtime-react",
+    "@shuvi/shared": "../shuvi/packages/shared",
+    "@shuvi/toolpack": "../shuvi/packages/toolpack",
+    "@shuvi/types": "../shuvi/packages/types",
+    "@shuvi/utils": "../shuvi/packages/utils"
+  }
+}
