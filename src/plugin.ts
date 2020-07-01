@@ -1,4 +1,5 @@
 import { Runtime } from "@shuvi/types";
+import { createStore } from "./store/createStore";
 
 const initPlugins: Runtime.InitPlugins = ({
   applyPluginOption,
@@ -11,9 +12,7 @@ const initPlugins: Runtime.InitPlugins = ({
     },
   });
 
-  applyPluginOption("speedmeasure", {
-    log: "this123",
-  });
+  applyPluginOption("redux", createStore);
 };
 
 export default initPlugins;
