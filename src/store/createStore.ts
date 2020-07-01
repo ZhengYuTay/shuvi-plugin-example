@@ -4,7 +4,7 @@ import { models, RootModel } from "./models";
 export type Dispatch = RematchDispatch<RootModel>;
 export type iRootState = RematchRootState<RootModel>;
 
-export const createStore = ({ initialState, ctx }: any) => {
+export const createStore = (initialState: any) => {
   return init({
     models,
     redux: {
