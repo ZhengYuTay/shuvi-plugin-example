@@ -8,6 +8,5 @@ module.exports = {
   env: {
     ree: process.env.ree,
   },
-  plugins: ["@shuvi/plugin-redux"],
-  publicPath: "./",
+  plugins: ["@shuvi/plugin-redux"]
 };

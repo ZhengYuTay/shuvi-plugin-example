@@ -12,7 +12,7 @@ const initPlugins: Runtime.InitPlugins = ({
     },
   });
 
-  applyPluginOption("redux", createStore);
+  applyPluginOption("redux", { createStore });
 };
 
 export default initPlugins;
