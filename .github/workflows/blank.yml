@@ -33,5 +33,7 @@ jobs:
     # Runs a single command using the runners shell
     - run: yarn install --pure-lockfile
 
-    # Runs a set of commands using the runners shell
-    - run: yarn build
+    - uses: jackyef/bundlewatch-gh-action@master
+      with:
+        build-script: yarn build
+        bundlewatch-github-token: ${{ secrets.BUNDLEWATCH_GITHUB_TOKEN }}
