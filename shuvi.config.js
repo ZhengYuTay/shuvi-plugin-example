@@ -8,5 +8,5 @@ module.exports = {
   env: {
     ree: process.env.ree,
   },
-  plugins: ["@shuvi/plugin-redux"]
+  plugins: ["@shuvi/plugin-redux"],
 };

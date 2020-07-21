@@ -1,5 +1,7 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
+// @ts-ignore
+import { Link } from "@shuvi/app";
 
 const App = () => {
   const [num, setNum] = React.useState(0);
@@ -8,9 +10,9 @@ const App = () => {
   console.log({ sharks });
   return (
     <div>
-      test string
+      test string1234
       <br />
-      num: {num}
+      num112: {num}
       sharks: {sharks}
       <br />
       <button
@@ -20,15 +22,16 @@ const App = () => {
         }}
       >
         {" "}
-        increment
+        1213
       </button>
+      <Link to="/qwe">notfound</Link>
     </div>
   );
 };
 
 App.getInitialProps = async ({ appContext }: any) => {
   const { store } = appContext;
-  store.dispatch.sharks.increment(2);
+  store.dispatch.sharks.increment(112);
   return {};
 };
 export default App;
