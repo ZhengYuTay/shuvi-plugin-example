@@ -30,7 +30,7 @@
     "files": [
       {
         "path": "./dist/client/**/*.js",
-        "maxSize": "40kB"
+        "maxSize": "45kB"
       }
     ]
   }
