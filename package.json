@@ -6,10 +6,12 @@
   "license": "MIT",
   "scripts": {
     "dev": "shuvi dev",
-    "build": "shuvi build"
+    "build": "shuvi build",
+    "postbuild": "bass analyze"
   },
   "devDependencies": {
     "@types/react": "^16.9.34",
+    "@bassjs/cli": "0.0.2",
     "bundlewatch": "^0.2.7",
     "typescript": "^3.8.3",
     "webpack-bundle-analyzer": "^3.8.0"
@@ -17,11 +19,13 @@
   "dependencies": {
     "@rematch/core": "^1.4.0",
     "@shuvi/plugin-redux": "0.0.1-beta.4",
+    "git-repo-info": "^2.1.1",
+    "lodash": "^4.17.19",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-redux": "^7.2.0",
     "react-router-dom": "^5.2.0",
-    "shuvi": "0.0.1-beta.48"
+    "shuvi": "0.0.1-beta.49"
   },
   "bundlewatch": {
     "trackBranches": [
