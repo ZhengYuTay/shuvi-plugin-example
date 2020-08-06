@@ -1,7 +1,7 @@
 import { Runtime } from "@shuvi/types";
 import { createStore } from "./store/createStore";
 
-const initPlugins: Runtime.InitPlugins = ({
+const initPlugins: Runtime.IInitAppPlugins = ({
   applyPluginOption,
   registerPlugin,
 }) => {
