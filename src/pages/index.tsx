@@ -1,18 +1,19 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 // @ts-ignore
-import { Link } from "@shuvi/app";
+import { Link, useRouter } from "@shuvi/app";
 import _ from "lodash";
 
-const App = () => {
+const Home = () => {
   const [num, setNum] = React.useState(0);
   const sharks = useSelector((state) => state.sharks);
   const dispatch = useDispatch();
-  console.log({ sharks });
+  const router = useRouter();
+
   return (
     <div>
       test string1234
-      {_.join(["a", "b", "c"], "~")}
+      {_.join(["a", "b", "c"], "~15")}
       <br />
       num112: {num}
       sharks: {sharks}
@@ -26,14 +27,17 @@ const App = () => {
         {" "}
         1213
       </button>
-      <Link to="/qwe">notfound</Link>
+      <Link to="/ree">notfou12nd</Link>
+      <Link to="/error">error</Link>
     </div>
   );
 };
 
-App.getInitialProps = async ({ appContext }: any) => {
+Home.getInitialProps = async ({ appContext }: any) => {
+  console.log("Home getInitialProps called");
   const { store } = appContext;
   store.dispatch.sharks.increment(112);
   return {};
 };
-export default App;
+
+export default Home;

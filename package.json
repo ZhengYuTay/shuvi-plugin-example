@@ -6,12 +6,10 @@
   "license": "MIT",
   "scripts": {
     "dev": "shuvi dev",
-    "build": "shuvi build",
-    "postbuild": "bass analyze"
+    "build": "shuvi build"
   },
   "devDependencies": {
     "@types/react": "^16.9.34",
-    "@bassjs/cli": "0.0.2",
     "bundlewatch": "^0.2.7",
     "typescript": "^3.8.3",
     "webpack-bundle-analyzer": "^3.8.0"
@@ -25,7 +23,20 @@
     "react-dom": "^16.13.1",
     "react-redux": "^7.2.0",
     "react-router-dom": "^5.2.0",
-    "shuvi": "0.0.1-beta.49"
+    "shuvi": "../shuvi/packages/shuvi"
+  },
+  "resolutions": {
+    "shuvi": "../shuvi/packages/shuvi",
+    "@shuvi/app": "../shuvi/packages/app",
+    "@shuvi/core": "../shuvi/packages/core",
+    "@shuvi/runtime-core": "../shuvi/packages/runtime-core",
+    "@shuvi/runtime-react": "../shuvi/packages/runtime-react",
+    "@shuvi/shared": "../shuvi/packages/shared",
+    "@shuvi/toolpack": "../shuvi/packages/toolpack",
+    "@shuvi/types": "../shuvi/packages/types",
+    "@shuvi/utils": "../shuvi/packages/utils",
+    "@shuvi/router": "../shuvi/packages/router",
+    "@shuvi/router-react": "../shuvi/packages/router-react"
   },
   "bundlewatch": {
     "trackBranches": [

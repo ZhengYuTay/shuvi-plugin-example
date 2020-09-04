@@ -1,8 +1,10 @@
-export default function Shell({ children }) {
+// @ts-ignore
+import { RouterView } from "@shuvi/app";
+export default function Shell() {
   return (
     <div>
-      qwe
-      {children}
+      qwe2
+      <RouterView />
     </div>
   );
 }
