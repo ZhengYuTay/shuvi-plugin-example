@@ -18,7 +18,7 @@
     "@rematch/core": "^1.4.0",
     "@shuvi/plugin-redux": "0.0.1-beta.4",
     "git-repo-info": "^2.1.1",
-    "lodash": "^4.17.19",
+    "lodash": "^4.17.21",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-redux": "^7.2.0",
